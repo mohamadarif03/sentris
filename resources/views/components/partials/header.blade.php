@@ -18,7 +18,7 @@
                                 aria-expanded="false">
                                 <div class="d-flex align-items-center">
                                     <div class="user-profile-img">
-                                        <img src="{{ auth()->user()->avatar_url }}" class="rounded-circle"
+                                        <img src="" class="rounded-circle"
                                             width="35" height="35" alt="" />
                                     </div>
                                 </div>

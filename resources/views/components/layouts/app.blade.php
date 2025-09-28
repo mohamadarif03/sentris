@@ -18,7 +18,6 @@
 
     <link id="themeColors" rel="stylesheet" href="{{ asset('dist/css/style.min.css') }}" />
 
-    @livewireStyles
 </head>
 
 <body>
@@ -35,9 +34,7 @@
 
             <x-partials.header />
 
-            <div class="container-fluid">
-                {{ $slot }}
-            </div>
+            @yield('content')
 
         </div>
     </div>
@@ -57,7 +54,6 @@
     <script src="{{ asset('dist/libs/apexcharts/dist/apexcharts.min.js') }}"></script>
     <script src="{{ asset('dist/js/dashboard.js') }}"></script>
 
-    @livewireScripts
     @stack('scripts')
 </body>
 
