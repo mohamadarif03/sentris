@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sistem Car Lease</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" type="image/png" href="http://localhost/dist/images/logos/favicon.ico" />
+
+    <link rel="stylesheet" href="http://localhost/dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+
+    <link id="themeColors" rel="stylesheet" href="http://localhost/dist/css/style.min.css" />
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="http://localhost/dist/images/logos/favicon.ico" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+
+        <aside class="left-sidebar">
+    <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="/" class="text-nowrap logo-img">
+                <img src="http://localhost/dist/images/logo.webp" width="200" alt="" srcset="">
+            </a>
+            <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                <i class="ti ti-x fs-8 text-muted"></i>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+            <ul id="sidebarnav">
+
+                
+                
+                
+                
+                
+                                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">T-INSIGHT</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link "
+                            href="http://localhost/dashboard-manajemen" aria-expanded="false">
+                            <span><i class="ti ti-chart-pie"></i></span>
+                            <span class="hide-menu">ESG Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link active"
+                            href="http://localhost/reports" aria-expanded="false">
+                            <span><i class="ti ti-report-analytics"></i></span>
+                            <span class="hide-menu">Report Generation</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link "
+                            href="http://localhost/scenarios" aria-expanded="false">
+                            <span><i class="ti ti-bulb"></i></span>
+                            <span class="hide-menu">Scenario Planning</span>
+                        </a>
+                    </li>
+                                                                                            </ul>
+        </nav>
+    </div>
+</aside>
+
+        <div class="body-wrapper">
+
+            
+                <div class="container-fluid">
+        <div class="mb-4">
+            <h4 class="card-title fw-semibold">Pusat Laporan (Report Center)</h4>
+            <p class="card-subtitle mb-0">Buat, kelola, dan unduh laporan keberlanjutan sesuai kebutuhan.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fw-semibold mb-4">Buat Laporan Baru</h5>
+                <div class="row align-items-end">
+                    <div class="col-lg-4 mb-3">
+                        <label for="reportTemplate" class="form-label">Template Laporan</label>
+                        <select class="form-select" id="reportTemplate">
+                            <option selected>Laporan Tahunan (GRI Standard)</option>
+                            <option>Ringkasan Eksekutif Kuartalan</option>
+                            <option>Laporan Emisi (TCFD Standard)</option>
+                            <option>Laporan Kustom</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <label for="reportPeriod" class="form-label">Periode Laporan</label>
+                        <input type="date" class="form-control" id="reportPeriod">
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <label class="form-label">Format File</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="format" id="formatPdf" value="pdf"
+                                    checked>
+                                <label class="form-check-label" for="formatPdf">PDF</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="format" id="formatXlsx"
+                                    value="xlsx">
+                                <label class="form-check-label" for="formatXlsx">XLSX</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 mb-3">
+                        <button class="btn btn-primary w-100">Generate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fw-semibold mb-4">Riwayat Laporan</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Nama Laporan</th>
+                                <th>Tanggal Dibuat</th>
+                                <th>Periode</th>
+                                <th>Status</th>
+                                <th class="text-end">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">Laporan Tahunan 2024</h6>
+                                </td>
+                                <td><span class="fs-3">15 Jan 2025, 10:30</span></td>
+                                <td><span class="fs-3">01 Jan 2024 - 31 Des 2024</span></td>
+                                <td><span class="badge bg-light-success text-success">Tersedia</span></td>
+                                <td class="text-end">
+                                    <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1 ms-auto">
+                                        <i class="ti ti-download"></i> Unduh
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">Ringkasan Eksekutif Q3 2025</h6>
+                                </td>
+                                <td><span class="fs-3">26 Sep 2025, 09:15</span></td>
+                                <td><span class="fs-3">01 Jul 2025 - 30 Sep 2025</span></td>
+                                <td><span class="badge bg-light-success text-success">Tersedia</span></td>
+                                <td class="text-end">
+                                    <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1 ms-auto">
+                                        <i class="ti ti-download"></i> Unduh
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">Laporan Emisi (TCFD)</h6>
+                                </td>
+                                <td><span class="fs-3">26 Sep 2025, 19:48</span></td>
+                                <td><span class="fs-3">01 Jan 2025 - 30 Sep 2025</span></td>
+                                <td><span class="badge bg-light-warning text-warning">Processing...</span></td>
+                                <td class="text-end">
+                                    <button class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1 ms-auto"
+                                        disabled>
+                                        <i class="ti ti-download"></i> Unduh
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost/dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="http://localhost/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="http://localhost/dist/js/app.min.js"></script>
+    <script src="http://localhost/dist/js/app.init.js"></script>
+    <script src="http://localhost/dist/js/app-style-switcher.js"></script>
+    <script src="http://localhost/dist/js/sidebarmenu.js"></script>
+    <script src="http://localhost/dist/js/custom.js"></script>
+
+    <script src="http://localhost/dist/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/js/dashboard.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sistem Car Lease</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" type="image/png" href="http://localhost/dist/images/logos/favicon.ico" />
+
+    <link rel="stylesheet" href="http://localhost/dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+
+    <link id="themeColors" rel="stylesheet" href="http://localhost/dist/css/style.min.css" />
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="http://localhost/dist/images/logos/favicon.ico" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+
+        <aside class="left-sidebar">
+    <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="/" class="text-nowrap logo-img">
+                <img src="http://localhost/dist/images/logo.webp" width="200" alt="" srcset="">
+            </a>
+            <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                <i class="ti ti-x fs-8 text-muted"></i>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+            <ul id="sidebarnav">
+
+                
+                
+                
+                
+                
+                                                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Validator Menu</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link "
+                            href="http://localhost/dashboard-validator" aria-expanded="false">
+                            <span><i class="ti ti-playlist-check"></i></span>
+                            <span class="hide-menu">Validation Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link active"
+                            href="http://localhost/history-validator" aria-expanded="false">
+                            <span><i class="ti ti-history"></i></span>
+                            <span class="hide-menu">Submission History</span>
+                        </a>
+                    </li>
+                                                                            </ul>
+        </nav>
+    </div>
+</aside>
+
+        <div class="body-wrapper">
+
+            
+                <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fw-semibold">Riwayat Submission (Submission History)</h5>
+                <p class="card-subtitle mb-4">Arsip semua data ESG yang telah diproses.</p>
+
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <label class="form-label">Cari berdasarkan nama data atau ID</label>
+                        <input type="text" class="form-control" placeholder="Contoh: #ESG-1135 atau Konsumsi Energi">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Filter berdasarkan Status</label>
+                        <select class="form-select">
+                            <option selected>Semua Status</option>
+                            <option value="1">Disetujui</option>
+                            <option value="2">Ditolak</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Filter berdasarkan Divisi</label>
+                        <select class="form-select">
+                            <option selected>Semua Divisi</option>
+                            <option value="1">Network Operations</option>
+                            <option value="2">Human Resources</option>
+                            <option value="3">General Affairs</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button class="btn btn-outline-primary w-100">Filter</button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>ID Submission</th>
+                                <th>Nama Data</th>
+                                <th>Tanggal Validasi</th>
+                                <th>Validator</th>
+                                <th>Status</th>
+                                <th class="text-end">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">#ESG-1132</h6>
+                                </td>
+                                <td><span class="fs-3">Tingkat Keberagaman Karyawan</span></td>
+                                <td><span class="fs-3">25 Sep 2025, 16:20</span></td>
+                                <td>
+                                    <h6 class="fw-normal fs-3 mb-0">Andi Pratama</h6>
+                                </td>
+                                <td><span class="badge bg-light-success text-success">Disetujui</span></td>
+                                <td class="text-end">
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Lihat Detail</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">#ESG-1131</h6>
+                                </td>
+                                <td><span class="fs-3">Jumlah E-Waste Terkumpul</span></td>
+                                <td><span class="fs-3">25 Sep 2025, 14:00</span></td>
+                                <td>
+                                    <h6 class="fw-normal fs-3 mb-0">Siti Hartina</h6>
+                                </td>
+                                <td><span class="badge bg-light-success text-success">Disetujui</span></td>
+                                <td class="text-end">
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Lihat Detail</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">#ESG-1130</h6>
+                                </td>
+                                <td><span class="fs-3">Data Limbah B3 Gudang Cikarang</span></td>
+                                <td><span class="fs-3">25 Sep 2025, 11:30</span></td>
+                                <td>
+                                    <h6 class="fw-normal fs-3 mb-0">Andi Pratama</h6>
+                                </td>
+                                <td><span class="badge bg-light-danger text-danger">Ditolak</span></td>
+                                <td class="text-end">
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Lihat Detail</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">#ESG-1129</h6>
+                                </td>
+                                <td><span class="fs-3">Program Pelatihan Keselamatan Kerja</span></td>
+                                <td><span class="fs-3">24 Sep 2025, 17:00</span></td>
+                                <td>
+                                    <h6 class="fw-normal fs-3 mb-0">Siti Hartina</h6>
+                                </td>
+                                <td><span class="badge bg-light-success text-success">Disetujui</span></td>
+                                <td class="text-end">
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Lihat Detail</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <nav aria-label="Page navigation" class="mt-4">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost/dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="http://localhost/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="http://localhost/dist/js/app.min.js"></script>
+    <script src="http://localhost/dist/js/app.init.js"></script>
+    <script src="http://localhost/dist/js/app-style-switcher.js"></script>
+    <script src="http://localhost/dist/js/sidebarmenu.js"></script>
+    <script src="http://localhost/dist/js/custom.js"></script>
+
+    <script src="http://localhost/dist/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/js/dashboard.js"></script>
+
+    </body>
+
+</html>

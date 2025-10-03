@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sistem Car Lease</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" type="image/png" href="http://localhost/dist/images/logos/favicon.ico" />
+
+    <link rel="stylesheet" href="http://localhost/dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+
+    <link id="themeColors" rel="stylesheet" href="http://localhost/dist/css/style.min.css" />
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="http://localhost/dist/images/logos/favicon.ico" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+
+        <aside class="left-sidebar">
+    <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="/" class="text-nowrap logo-img">
+                <img src="http://localhost/dist/images/logo.webp" width="200" alt="" srcset="">
+            </a>
+            <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                <i class="ti ti-x fs-8 text-muted"></i>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+            <ul id="sidebarnav">
+
+                
+                
+                
+                
+                
+                                                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Validator Menu</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link active"
+                            href="http://localhost/dashboard-validator" aria-expanded="false">
+                            <span><i class="ti ti-playlist-check"></i></span>
+                            <span class="hide-menu">Validation Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link "
+                            href="http://localhost/history-validator" aria-expanded="false">
+                            <span><i class="ti ti-history"></i></span>
+                            <span class="hide-menu">Submission History</span>
+                        </a>
+                    </li>
+                                                                            </ul>
+        </nav>
+    </div>
+</aside>
+
+        <div class="body-wrapper">
+
+            
+                <div class="container-fluid">
+        <div class="mb-4">
+            <h4 class="card-title fw-semibold">Dasbor Validasi</h4>
+            <p class="card-subtitle mb-0">Selamat datang! Berikut adalah data ESG yang memerlukan review Anda.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+                <div class="card bg-light-warning">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="p-4 bg-warning rounded-1 me-3"><i class="ti ti-file-info text-white fs-7"></i></div>
+                            <div>
+                                <h4 class="mb-0 fs-7 fw-semibold">12</h4>
+                                <p class="fs-3 mb-0">Menunggu Validasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card bg-light-success">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="p-4 bg-success rounded-1 me-3"><i class="ti ti-file-check text-white fs-7"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0 fs-7 fw-semibold">32</h4>
+                                <p class="fs-3 mb-0">Disetujui Hari Ini</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card bg-light-danger">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="p-4 bg-danger rounded-1 me-3"><i class="ti ti-file-x text-white fs-7"></i></div>
+                            <div>
+                                <h4 class="mb-0 fs-7 fw-semibold">3</h4>
+                                <p class="fs-3 mb-0">Ditolak Hari Ini</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card bg-light-primary">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="p-4 bg-primary rounded-1 me-3"><i class="ti ti-clock-hour-4 text-white fs-7"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0 fs-7 fw-semibold">2.5 Jam</h4>
+                                <p class="fs-3 mb-0">Waktu Rata-rata Validasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fw-semibold mb-4">Antrian Validasi (Validation Queue)</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>ID Submission</th>
+                                <th>Nama Data</th>
+                                <th>Divisi Pengirim</th>
+                                <th>Tanggal Submit</th>
+                                <th class="text-end">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">#ESG-1135</h6>
+                                </td>
+                                <td><span class="fs-3">Konsumsi Energi BTS Wilayah Jawa Timur</span></td>
+                                <td><span class="badge bg-light-primary text-primary">Network Operations</span></td>
+                                <td><span class="fs-3">26 Sep 2025, 14:30</span></td>
+                                <td class="text-end">
+                                    <a href="#" class="btn btn-primary">Review Data</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">#ESG-1134</h6>
+                                </td>
+                                <td><span class="fs-3">Data Pelatihan Karyawan Q3</span></td>
+                                <td><span class="badge bg-light-info text-info">Human Resources</span></td>
+                                <td><span class="fs-3">26 Sep 2025, 11:15</span></td>
+                                <td class="text-end">
+                                    <a href="#" class="btn btn-primary">Review Data</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6 class="fw-semibold mb-0">#ESG-1133</h6>
+                                </td>
+                                <td><span class="fs-3">Penggunaan Air Fasilitas Kantor Pusat</span></td>
+                                <td><span class="badge bg-light-success text-success">General Affairs</span></td>
+                                <td><span class="fs-3">26 Sep 2025, 10:05</span></td>
+                                <td class="text-end">
+                                    <a href="#" class="btn btn-primary">Review Data</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost/dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="http://localhost/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="http://localhost/dist/js/app.min.js"></script>
+    <script src="http://localhost/dist/js/app.init.js"></script>
+    <script src="http://localhost/dist/js/app-style-switcher.js"></script>
+    <script src="http://localhost/dist/js/sidebarmenu.js"></script>
+    <script src="http://localhost/dist/js/custom.js"></script>
+
+    <script src="http://localhost/dist/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/js/dashboard.js"></script>
+
+    </body>
+
+</html>

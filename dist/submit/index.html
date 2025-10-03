@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sistem Car Lease</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" type="image/png" href="http://localhost/dist/images/logos/favicon.ico" />
+
+    <link rel="stylesheet" href="http://localhost/dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+
+    <link id="themeColors" rel="stylesheet" href="http://localhost/dist/css/style.min.css" />
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="http://localhost/dist/images/logos/favicon.ico" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+
+        <aside class="left-sidebar">
+    <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="/" class="text-nowrap logo-img">
+                <img src="http://localhost/dist/images/logo.webp" width="200" alt="" srcset="">
+            </a>
+            <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                <i class="ti ti-x fs-8 text-muted"></i>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+            <ul id="sidebarnav">
+
+                
+                
+                
+                
+                
+                                                                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Kontributor Menu</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link "
+                            href="http://localhost/dashboard-kontributor" aria-expanded="false">
+                            <span><i class="ti ti-dashboard"></i></span>
+                            <span class="hide-menu">Dasbor Saya</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link active"
+                            href="http://localhost/submit" aria-expanded="false">
+                            <span><i class="ti ti-cloud-upload"></i></span>
+                            <span class="hide-menu">Submit Data Baru</span>
+                        </a>
+                    </li>
+                                                            </ul>
+        </nav>
+    </div>
+</aside>
+
+        <div class="body-wrapper">
+
+            
+                <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title fw-semibold mb-1">Formulir Submission Data ESG</h4>
+                <p class="card-subtitle mb-4">Pastikan data yang Anda masukkan akurat dan disertai bukti pendukung.</p>
+
+                <form>
+                    <div class="mb-4 pb-4 border-bottom">
+                        <h5 class="fw-semibold mb-3"><span class="badge bg-primary rounded-circle me-2">1</span>Informasi
+                            Dasar</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="dataCategory" class="form-label">Kategori Data</label>
+                                <select class="form-select" id="dataCategory">
+                                    <option>Sosial</option>
+                                    <option selected>Lingkungan</option>
+                                    <option>Tata Kelola</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="dataMetric" class="form-label">Metrik Spesifik</label>
+                                <select class="form-select" id="dataMetric">
+                                    <option>Konsumsi Energi Listrik</option>
+                                    <option>Penggunaan Air Fasilitas</option>
+                                    <option selected>Jumlah E-Waste Terkumpul</option>
+                                    <option>Emisi Scope 1</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="reportPeriod" class="form-label">Periode Laporan</label>
+                                <input type="month" class="form-control" id="reportPeriod" value="2025-09">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 pb-4 border-bottom">
+                        <h5 class="fw-semibold mb-3"><span class="badge bg-primary rounded-circle me-2">2</span>Input Nilai
+                            & Deskripsi</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="metricValue" class="form-label">Nilai Metrik</slabel>
+                                    <input type="number" class="form-control" id="metricValue"
+                                        placeholder="Masukkan angka...">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="metricUnit" class="form-label">Satuan</label>
+                                <select class="form-select" id="metricUnit">
+                                    <option>kWh</option>
+                                    <option>Liter</option>
+                                    <option selected>Ton</option>
+                                    <option>Jam</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="description" class="form-label">Catatan / Deskripsi (Opsional)</label>
+                                <textarea class="form-control" id="description" rows="3" placeholder="Tambahkan konteks jika diperlukan..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-semibold mb-3"><span class="badge bg-primary rounded-circle me-2">3</span>Unggah Bukti
+                            Pendukung</h5>
+                        <div class="card bg-light-lighten border-2 border-dashed">
+                            <div class="card-body text-center">
+                                <div class="p-3">
+                                    <i class="ti ti-cloud-upload fs-9 text-muted"></i>
+                                    <h5 class="mt-2">Drag & drop file di sini atau klik untuk upload</h5>
+                                    <p class="fs-3 text-muted">Mendukung format: PDF, XLSX, DOCX, JPG, PNG</p>
+                                    <input type="file" class="d-none">
+                                    <button type="button" class="btn btn-secondary mt-2">Pilih File</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Submit Data</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost/dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="http://localhost/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="http://localhost/dist/js/app.min.js"></script>
+    <script src="http://localhost/dist/js/app.init.js"></script>
+    <script src="http://localhost/dist/js/app-style-switcher.js"></script>
+    <script src="http://localhost/dist/js/sidebarmenu.js"></script>
+    <script src="http://localhost/dist/js/custom.js"></script>
+
+    <script src="http://localhost/dist/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/js/dashboard.js"></script>
+
+    </body>
+
+</html>
