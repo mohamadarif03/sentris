@@ -28,7 +28,7 @@ Route::prefix('manajemen')->name('manajemen.')->group(function () {
 Route::prefix('validator')->name('validator.')->group(function () {
     Route::view('dashboard', 'validator.dashboard')->name('dashboard');
     Route::view('history', 'validator.history.index')->name('history.index');
-});
+});     
 
 Route::prefix('kontributor')->name('kontributor.')->group(function () {
     Route::view('dashboard', 'kontributor.dashboard')->name('dashboard');
