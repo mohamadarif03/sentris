@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sistem Car Lease</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" type="image/png" href="http://localhost/dist/images/logos/favicon.ico" />
+
+    <link rel="stylesheet" href="http://localhost/dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+
+    <link id="themeColors" rel="stylesheet" href="http://localhost/dist/css/style.min.css" />
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="http://localhost/dist/images/logos/favicon.ico" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+
+    <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+
+        <aside class="left-sidebar">
+    <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="/" class="text-nowrap logo-img">
+                <img src="http://localhost/dist/images/logo.webp" width="200" alt="" srcset="">
+            </a>
+            <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                <i class="ti ti-x fs-8 text-muted"></i>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+            <ul id="sidebarnav">
+
+                
+                
+                
+                
+                                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Admin Menu</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link "
+                            href="http://localhost/admin/dashboard" aria-expanded="false">
+                            <span><i class="ti ti-layout-dashboard"></i></span>
+                            <span class="hide-menu">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link "
+                            href="http://localhost/admin/users" aria-expanded="false">
+                            <span><i class="ti ti-users"></i></span>
+                            <span class="hide-menu">User Management</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link active"
+                            href="http://localhost/admin/settings" aria-expanded="false">
+                            <span><i class="ti ti-settings"></i></span>
+                            <span class="hide-menu">System Settings</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link "
+                            href="http://localhost/admin/logs" aria-expanded="false">
+                            <span><i class="ti ti-file-text"></i></span>
+                            <span class="hide-menu">Audit Log</span>
+                        </a>
+                    </li>
+                
+                                                                                            </ul>
+        </nav>
+    </div>
+</aside>
+
+        <div class="body-wrapper">
+
+            
+                <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title fw-semibold mb-4">Pengaturan Sistem</h4>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="general-tab" data-bs-toggle="tab"
+                            data-bs-target="#general-tab-pane" type="button" role="tab"
+                            aria-controls="general-tab-pane" aria-selected="true">
+                            <i class="ti ti-settings me-1"></i> Umum
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mail-tab" data-bs-toggle="tab" data-bs-target="#mail-tab-pane"
+                            type="button" role="tab" aria-controls="mail-tab-pane" aria-selected="false">
+                            <i class="ti ti-mail me-1"></i> Email
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="security-tab" data-bs-toggle="tab" data-bs-target="#security-tab-pane"
+                            type="button" role="tab" aria-controls="security-tab-pane" aria-selected="false">
+                            <i class="ti ti-lock me-1"></i> Keamanan
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="general-tab-pane" role="tabpanel"
+                        aria-labelledby="general-tab" tabindex="0">
+                        <div class="p-3">
+                            <div class="mb-3">
+                                <label for="appName" class="form-label">Nama Aplikasi</label>
+                                <input type="text" class="form-control" id="appName" value="SENTRIS">
+                            </div>
+                            <div class="mb-3">
+                                <label for="appLogo" class="form-label">Logo Aplikasi</label>
+                                <input class="form-control" type="file" id="appLogo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="appTimezone" class="form-label">Zona Waktu</label>
+                                <select class="form-select" id="appTimezone">
+                                    <option selected>Asia/Jakarta</option>
+                                    <option value="1">Asia/Makassar</option>
+                                    <option value="2">Asia/Jayapura</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="mail-tab-pane" role="tabpanel" aria-labelledby="mail-tab" tabindex="0">
+                        <div class="p-3">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="mailHost" class="form-label">Mail Host</label>
+                                    <input type="text" class="form-control" id="mailHost"
+                                        placeholder="smtp.mailtrap.io">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="mailPort" class="form-label">Mail Port</label>
+                                    <input type="text" class="form-control" id="mailPort" placeholder="2525">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mailUser" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="mailUser" placeholder="your-username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mailPass" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="mailPass" placeholder="your-password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="security-tab-pane" role="tabpanel" aria-labelledby="security-tab"
+                        tabindex="0">
+                        <div class="p-3">
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" role="switch" id="twoFactorSwitch"
+                                    checked>
+                                <label class="form-check-label" for="twoFactorSwitch">Aktifkan Two-Factor Authentication
+                                    (2FA)</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" role="switch" id="registerSwitch">
+                                <label class="form-check-label" for="registerSwitch">Izinkan Pendaftaran Pengguna
+                                    Baru</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="sessionTimeout" class="form-label">Session Timeout (menit)</label>
+                                <input type="number" class="form-control" id="sessionTimeout" value="120">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-top mt-3 pt-3 px-3">
+                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="http://localhost/dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="http://localhost/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="http://localhost/dist/js/app.min.js"></script>
+    <script src="http://localhost/dist/js/app.init.js"></script>
+    <script src="http://localhost/dist/js/app-style-switcher.js"></script>
+    <script src="http://localhost/dist/js/sidebarmenu.js"></script>
+    <script src="http://localhost/dist/js/custom.js"></script>
+
+    <script src="http://localhost/dist/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="http://localhost/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="http://localhost/dist/js/dashboard.js"></script>
+
+    </body>
+
+</html>
